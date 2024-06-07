@@ -13,8 +13,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ClassResp {
     private Long id;
-    private String className;
-    private String classDescription;
-    private LocalDate classCreated_at;
-    private boolean classActive;
+    private String name;
+    private String description;
+    private LocalDate createdAt;
+    private boolean active;
+    
+    
 }

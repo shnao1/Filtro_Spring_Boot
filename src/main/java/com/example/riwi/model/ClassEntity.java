@@ -9,7 +9,11 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+import lombok.Builder;
+import lombok.Data;
 
+@Data
+@Builder
 @Entity
 public class ClassEntity {
     @Id
@@ -95,6 +99,26 @@ public class ClassEntity {
 
     public void setLessonEntity(Set<LessonEntity> lessonEntity) {
         this.lessonEntity = lessonEntity;
+    }
+
+    public static Object Builder() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'Builder'");
+    }
+
+    public LocalDate getCreatedAt() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getCreatedAt'");
+    }
+
+    public static ClassEntity builder() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'builder'");
+    }
+
+    public Object className(String className2) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'className'");
     }
 
     
